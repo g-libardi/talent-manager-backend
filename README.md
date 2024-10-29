@@ -13,6 +13,6 @@ Django API for a talent manager application.
 
 
 # Features
-- [ ] Allow user to auth through JWT
+- [ ] Allow users to auth through JWT
 - [ ] Allow users to perform CRUD operations with candidates table based on permissions
 - [ ] Allow users to search for candidates through query parameters
