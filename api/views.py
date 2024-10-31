@@ -2,7 +2,7 @@ from rest_framework.views import APIView, Response, Request
 from rest_framework import status
 from drf_spectacular.utils import extend_schema
 
-# Create your views here.
+
 class PingView(APIView):
     @extend_schema(
         summary='Ping endpoint',
