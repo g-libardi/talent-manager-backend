@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'drf_spectacular',
     'ping',
     'login',
+    'candidates',
 ]
 
 MIDDLEWARE = [
