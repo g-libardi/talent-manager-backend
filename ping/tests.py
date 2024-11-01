@@ -7,6 +7,6 @@ class TestPingView(TestCase):
         """
         Expects a 200 response with a {'message': 'pong'} JSON response
         """
-        response = self.client.get(reverse('ping'))
+        response = self.client.get(reverse('get-ping'))
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json(), {'message': 'pong'})
