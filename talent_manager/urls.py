@@ -17,11 +17,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from drf_spectacular.views import SpectacularSwaggerView, SpectacularAPIView
+from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
+from auth.views import CreateTokenPairView, CreateAccessTokenView
 
 api_urls = [
     path('ping/', include('ping.urls'), name='ping'),
     path('schema/', SpectacularAPIView.as_view(), name='schema'),
-    path('docs/', SpectacularSwaggerView.as_view(), name='api-docs')
+    path('docs/', SpectacularSwaggerView.as_view(), name='api-docs'),
+    path('auth/token-pair/', CreateTokenPairView.as_view(), name='create-token-pair'),
+    path('auth/access-token/', CreateAccessTokenView.as_view(), name='create-access-token'),
 ]
 
 urlpatterns = [
