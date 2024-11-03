@@ -25,6 +25,7 @@ api_urls = [
     path('docs/', SpectacularSwaggerView.as_view(), name='api-docs'),
     path('login/token-pair/', CreateTokenPairView.as_view(), name='create-token-pair'),
     path('login/access-token/', CreateAccessTokenView.as_view(), name='create-access-token'),
+    path('candidates/', include('candidates.urls'), name='candidates'),
 ]
 
 urlpatterns = [
