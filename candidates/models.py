@@ -5,6 +5,7 @@ class Status(TextChoices):
     APPLIED = 'APPLIED', 'Applied'
     INVITED = 'INVITED', 'Invited'
     REJECTED = 'REJECTED', 'Rejected'
+    HIRED = 'HIRED', 'Hired'
 
 
 class Candidate(Model):
